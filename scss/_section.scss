@@ -1,0 +1,44 @@
+.section {
+	height: 100vh;
+}
+
+.section--left {
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	@include mq(desktop) {
+		float: left;
+		width: 40%;
+	}
+}
+
+.section--right {
+	display: none;
+
+	@include mq(desktop) {
+		display: block;
+		position: relative;
+		width: 60%;
+		background-color: green;
+		float: right;
+		background: url("../img/right-bg.jpeg") no-repeat;
+		background-size: cover;
+		background-position: left;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right:0;
+			background-color: #000;
+			opacity: .3;
+		}
+	}
+
+}

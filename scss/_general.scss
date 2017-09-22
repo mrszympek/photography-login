@@ -3,3 +3,17 @@
   padding: 0;
   border: 0;
 }
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrap-small {
+  max-width: px2rem(650px);
+  //max-width:
+}

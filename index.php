@@ -1,39 +1,33 @@
-<?php session_start() ?>
-
-
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Login panel</title>
+	<meta charset="UTF-8">
+	<title>Login panel</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
 
 </head>
 <body>
-<?php
-	echo "Favourite color is " . $_SESSION["favcolor"];
-?>
 <section class="section section--left">
-    <div class="wrap-small">
-        <div class="login-container">
-            <a href="#" class="login-logo">
-                <img src="img/logo.png" alt="">
-            </a>
-	        <h2 class="login-title">Login in to your page</h2>
+	<div class="wrap-small">
+		<div class="login-container">
+			<a href="#" class="login-logo">
+				<img src="img/logo.png" alt="">
+			</a>
+			<h2 class="login-title">Login in to your page</h2>
 
-	        <form action="app/login.php" method="post">
-		        <input class="login__input" name="email" type="text" placeholder="Email">
-		        <input class="login__input" name="password" type="password" placeholder="Password">
-		        <input class="button login__button" type="submit" value="Login">
-	        </form>
+			<form action="app/login.php" method="post">
+				<input class="login__input" name="email" type="text" placeholder="Email">
+				<input class="login__input" name="password" type="password" placeholder="Password">
+				<input class="button login__button" type="submit" value="Login">
+			</form>
 
-	        <p>Don't have an account? <a href="register.php">Register here</a></p>
-        </div>
-    </div>
+			<p>Don't have an account? <a href="register.php">Register here</a></p>
+		</div>
+	</div>
 </section>
 
 <section class="section section--right"></section>

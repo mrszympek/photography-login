@@ -13,7 +13,6 @@ $result = mysqli_query($connection, $sql);
 
 if (!$row = $result->fetch_assoc()) {
 	echo "Login Incorrect";
-	echo $hash_pass;
 } else {
 	echo "login Successfully";
 }

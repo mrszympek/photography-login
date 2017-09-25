@@ -17,9 +17,10 @@ $count_row = $check->num_rows;
 if(!$count_row == 0) {
 	echo "You've been already registered";
 } else {
-//	$db = "INSERT INTO user(name, email, password) VALUES('$name' ,'$email', '$hash_pass')";
-//	$query = mysqli_query($connection, $db);
-	echo "dodaj nowy";
+	$db = "INSERT INTO user(name, email, password) VALUES('$name' ,'$email', '$hash_pass')";
+	$query = mysqli_query($connection, $db);
+	header("Location: ../index.php");
+
 }
 
 //var_dump($row);
@@ -28,5 +29,4 @@ if(!$count_row == 0) {
 
 
 
-//header("Location: ../index.php");
 

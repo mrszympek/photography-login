@@ -15,4 +15,7 @@ if (!$row = $result->fetch_assoc()) {
 	echo "Login Incorrect";
 } else {
 	echo "login Successfully";
+
 }
+
+

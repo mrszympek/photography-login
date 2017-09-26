@@ -52,6 +52,7 @@
 .login__button {
 	background-color: #13b313;
 	padding: .8rem 2rem;
+	margin-bottom: 1rem;
 	color: #fff;
 	font-size: 1rem;
 	border-radius:4px;
@@ -61,5 +62,8 @@
 	&:focus {
 		outline: 0;
 	}
+}
+
+.login-meta {
 
 }
